@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>
-            FITNESS ROUTNIES
+            FITNESS ROUTINESS
         </title>
         <style>
             body
@@ -11,81 +11,183 @@
                 size: 100;
                 background-size: cover;
             }
+            .tit
+             {
+                text-align: center;
+                color: #f0f2f5;
+                font-size: 70px;
+             }
+             .form{
+                 border: 1px solid white;
+                 height: 750px;
+                 margin-left: 27%;
+                 margin-right: 37%; 
+                 box-shadow: -10px -10px 100px white;  
+                 border-radius:30px;
+                 justify-content: center;
+             }
+             .lable{
+                 height: 40px;
+                 width: 55%;
+                 margin-top: 30px;
+                 margin-left: 20%;
+                 border-radius:10px;
+             }
+             .button{
+                margin-top: 30px;
+                margin-left: 40%;
+                width: 25%;
+                height: 40px;
+                color: black;
+                font-size: 25px;
+                border-radius: 10px;
+             }
+             .button:hover{
+                 color: white;
+                 background-color: black;
+                 box-shadow: 10px 10px 100px white;
+             }
+             #date{
+                 height: 40px;
+                 width: 55%;
+                 margin-left: 20%; 
+                 border-radius:10px;  
+             }
+             .dob{
+                height: 40px;
+                 width: 60%;
+                 margin-top: 30px;
+                 margin-left: 20%;
+                 color: white;
+             }
         </style>
     </head>
     <body>
-        <h1 style="color: cornsilk; text-align:center; font-size: 80px; font-weight: bolder;"> FITNESS ROUTNIES </h1>
-
-            <br>
-            <br>
-            <br>
-          <form align="center" action="Fitness_Routnis_login.html">
-            <table align="center" border="0">
-          <tr height="50" width="50">
-            <td style="color: honeydew;">
-                Name:
-            </td>
-                <td>
-                    <input type="text" name="name" placeholder="Enter your Name" required>
-                </td>
-          </tr>
-          <tr height="50" width="50">
-          <td style="color: honeydew;">
-              Email:
-            </td>
-            <td>
-                <input type="email" name="email_id" id="email_id" placeholder="Enter your email_id">
-            </td>
-          </tr>
-          <tr height="50" width="50">
-            <td style="color: honeydew;">
-                Password:
-            </td>
-            <td>
-                <input type="password"placeholder="Enter your password" name="password" required minlength="8" maxlength="8">
-            </td>
-          </tr>
-          <tr height="50 width50">
-              <td style="color: honeydew;">
-                  Height:
-              </td>
-              <td style="color: honeydew;">
-                  <input type="number" placeholder="Enter your height" required>
-              </td>
-          </tr>
-              <tr height="50" width="50">
-                <td style="color: honeydew;">
-                    weight:
-                </td>
-                <td style="color: honeydew;">
-                    <input type="number" placeholder="Enter your Weight" required>
-                </td>
-          </tr>
-          <tr height="50" width="50" >
-              <td style="color: honeydew;">
-                Date of birth:
-              </td>
-              <td>
-                  <input type="date" required>
-              </td>
-          </tr>
-          <tr height="50" width="50">
-              <td style="color: honeydew;">
-                  Any experience in Workout
-              </td>
-              <td>
-                  <textarea>
-
-                  </textarea>
-              </td>
-          </tr>
-          <tr>
-              <td>
-                 <input type="submit">
-                <input type="reset">
-              </td>
-          </tr>
-        </table>
+        <h1 class="tit"> FITNESS ROUTINESS </h1> <br> <br> <br>
+        <div class="form">
+            <form action="Fitness_Routnis_login.html">
+            <input type="text" name="name" placeholder="Username" required class="lable"> <br>
+            <input type="email" name="email_id" placeholder="Mail address" required class="lable"> <br>
+            <input type="password" placeholder="password" name="password" class="lable" required minlength="8" maxlength="8"> <br>
+            <input type="password" placeholder="Confirm password" name="password" class="lable" required minlength="8" maxlength="8"> <br>
+            <input type="number" placeholder="Weight in kg" min="30" class="lable" required> <br>
+            <input type="number" placeholder="Height in cm" min="120" class="lable" required> <br> <br>
+            <label for="date" class="dob"> Date of Birth</label> <input id="date" type="date" min="2003-1-1" max="1980-1-1" required> <br>
+            <textarea placeholder="Any experience in Gym" rows="4" cols="21" class="lable"></textarea> <br>
+            <input type="submit" class="button"> <br>
+           <input type="reset" class="button"> <br>
         </form>
+        </div>
+        
     </body>
-</html>
+    </html>    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- 
+            <table align="center" border="0">
+                <tr height="50" width="50">
+                    <td style="color: honeydew;">
+                        Name:
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr height="50" width="50">
+                    <td style="color: honeydew;">
+                        Email:
+                    </td>
+                    <td>
+                       
+                    </td>
+                </tr>
+                <tr height="50" width="50">
+                    <td style="color: honeydew;">
+                        Password:
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr height="50 width50">
+                    <td style="color: honeydew;">
+                        Height:
+                    </td>
+                    <td style="color: honeydew;">
+                        
+                    </td>
+                </tr>
+                <tr height="50" width="50">
+                    <td style="color: honeydew;">
+                        weight:
+                    </td>
+                    <td style="color: honeydew;">
+                        
+                    </td>
+                </tr>
+                <tr height="50" width="50">
+                    <td style="color: honeydew;">
+                        Date of birth:
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr height="50" width="50">
+                    <td style="color: honeydew;">
+                       
+                    </td>
+                    <td>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        
+                    </td>
+                </tr>
+            </table>
+        -->

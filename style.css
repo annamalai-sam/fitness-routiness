@@ -1,0 +1,67 @@
+body {
+    background-image: url(bg.jpg);
+    background-position: center;
+    size: 100;
+    background-size: cover;
+}
+
+.tit {
+    text-align: center;
+    color: #f0f2f5;
+    font-size: 70px;
+}
+
+.subtit {
+    text-align: center;
+    color: #F0FFFF;
+    font-size: 50px;
+}
+
+.tab {
+    width: 100%;
+}
+
+.head {
+    color: aliceblue;
+    font-size: 40px;
+    text-align: center;
+}
+
+.p {
+    color: ghostwhite;
+    font-size: 35px;
+    margin-left: 50px;
+}
+
+.img {
+    width: 750px;
+    height: 500px;
+    margin-left: 150px;
+}
+.div {
+    /* border: 2px solid whitesmoke;
+    border-radius: 15px; */
+    padding: 1%;
+}
+.dav{
+    display: inline-flex;
+    margin-left: 150px;
+}
+.image{
+    width: 375px;
+    height: 500px;
+}
+/* 
+<div class="div">
+<table class="tab">
+    <tr>
+        <th class="head" colspan="2"> </th>
+    </tr>
+    <tr> <td> <br> <br></td></tr>
+    <tr>
+        <td width="50%"> <img src="./" class="img"></td>
+        <td> <p class="p"> </p></td>
+    </tr>
+</table>
+</div>
+ */
