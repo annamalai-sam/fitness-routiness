@@ -1,7 +1,7 @@
-    <html>
+ <html>
     <head>
         <title>
-            FITNESS ROUTINESS
+            FITNESS ROUTINES
         </title>
         <style>
             body
@@ -34,12 +34,55 @@
                 font-size: 25px;
                 margin-left: 200px;
                 border-radius: 10px;
+                cursor: pointer;
             }
-        </style>
+.logo{
+      display: inline-flex;
+}
+.top{
+  display: inline-flex;
+  width: 100%;
+}
+  .navbar{  
+    font-size: 150%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0.5%;
+    width: 110%;
+    height: 10%;
+    background-color: black;
+}
+ul li{
+  display:inline-block;
+}
+ul li a{
+  text-decoration: none;
+  color: whitesmoke;
+  padding: 10px;
+}
+ul li a:hover{
+    color: black;
+    background-color:whitesmoke;
+}
+ul li.active a{   
+    color:black;
+    background-color:whitesmoke;      
+}
+
+     </style>
     </head>
     <body>
-        <h1 style="" class="title"> FITNESS ROUTINESS </h1>
+        <h1 class="title"> FITNESS ROUTINES </h1>
         <br>
+        <div class="top">
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                    <li class="active"><a href="">About Us</a></li>
+                    <li><a href="">Shop</a></li>
+                </ul>
+            </div>
+        </div>
         <h1 class="par">shoulders</h1><br>
         <span>
             <img src="sholder_begin.jpeg">
@@ -47,8 +90,10 @@
             <img src="sholder_adv.jpeg">
         </span><br>
         <button onclick="window.location.href='sholder_begin.html';"> Beginner</button>
-        <button onclick="window.location.href='sholder_inter.html ';"> Intermediate </button>
-        <button onclick="window.location.href='sholder_adv.html';"> Advanced </button>
+        <button onclick="window.location.href='sholder_inter.html ';">
+            Intermediate </button>
+        <button onclick="window.location.href='sholder_adv.html';"> Advanced
+        </button>
         <h1 class="par">Chest</h1><br>
         <span>
             <img src="chest_begin.jpg">
@@ -56,8 +101,10 @@
             <img src="chest_adv.jpg">
         </span><br>
         <button onclick="window.location.href='./chest_begin.html ';"> Beginner</button>
-        <button onclick="window.location.href='./chest_inter.html ';"> Intermediate </button>
-        <button onclick="window.location.href='./chest_adv.html ';"> Advanced </button>
+        <button onclick="window.location.href='./chest_inter.html ';">
+            Intermediate </button>
+        <button onclick="window.location.href='./chest_adv.html ';"> Advanced
+        </button>
         <h1 class="par">Arms</h1><br>
         <span>
             <img src="hand_begin.jpg">
@@ -65,17 +112,21 @@
             <img src="hands_adv.jpg">
         </span><br>
         <button onclick="window.location.href='./hands_begin.html';"> Beginner</button>
-        <button onclick="window.location.href='./hands_inter.html';"> Intermediate </button>
-        <button onclick="window.location.href='./hands_adv.html';"> Advanced </button>
+        <button onclick="window.location.href='./hands_inter.html';">
+            Intermediate </button>
+        <button onclick="window.location.href='./hands_adv.html';"> Advanced
+        </button>
         <h1 class="par">ABS</h1><br>
         <span>
             <img src="abs_begin.jpeg">
             <img src="abs_inter.jpeg">
-            <img src="./abs_adv.jpg">    
+            <img src="./abs_adv.jpg">
         </span><br>
         <button onclick="window.location.href='./abs_inter.html ';"> Beginner</button>
-        <button onclick="window.location.href='./abs_inter.html ';"> Intermediate </button>
-        <button onclick="window.location.href='./abs_inter.html ';"> Advanced </button>
+        <button onclick="window.location.href='./abs_inter.html ';">
+            Intermediate </button>
+        <button onclick="window.location.href='./abs_inter.html ';"> Advanced
+        </button>
         <h1 class="par">leg</h1><br>
         <span>
             <img src="leg_begin.jpeg">
@@ -83,7 +134,9 @@
             <img src="leg_adv.jpg">
         </span><br>
         <button onclick="window.location.href='./leg_begin.html';"> Beginner</button>
-        <button onclick="window.location.href='./leg_inter.html';"> Intermediate </button>
-        <button onclick="window.location.href='./leg_adv.html';"> Advanced </button>
-    </body> 
+        <button onclick="window.location.href='./leg_inter.html';"> Intermediate
+        </button>
+        <button onclick="window.location.href='./leg_adv.html';"> Advanced
+        </button>
+    </body>
 </html>

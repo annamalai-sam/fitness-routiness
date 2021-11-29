@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Fitness routiness</title>
+    <title>Fitness routines</title>
     <style>
       body{
         background-image: url(bg3.jpg);
@@ -10,34 +10,36 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-      h1{
-        text-align: center;
-        font-size: 75px;
-      }
-      .navbar{  
+      .logo{
+      display: inline-flex;
+}
+.top{
+  display: inline-flex;
+  width: 100%;
+}
+  .navbar{  
     font-size: 150%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding-left: 10px;
+    margin-top: 0.5%;
+    width: 110%;
+    height: 10%;
+    background-color: black;
 }
 ul li{
   display:inline-block;
 }
 ul li a{
   text-decoration: none;
+  color: whitesmoke;
   padding: 10px;
-  color: black;
 }
 ul li a:hover{
-    border-radius: 20px;
-    border: 1px solid ;
-    color: white;
-    background-color: black;
+    color: black;
+    background-color:whitesmoke;
 }
-ul li.active a{
-    border-radius: 20px;
-    border: 1px solid ;    
-    color: white;
-    background-color: black;      
+ul li.active a{   
+    color:black;
+    background-color:whitesmoke;      
 }
 .abus {
     color: black;
@@ -67,23 +69,28 @@ ul li.active a{
     </style>
   </head>
   <body>
-    <h1>Fitness Routiness</h1>
-    <div class="navbar" >
-      <ul >
-          <li><a href="index.html" >Home</a></li>
-          <li><a href="./contact.html ">Contact</a></li>
-          <li class="active"><a href=" ">About Us</a></li>
+    <div class="top">
+      <div class="logo"> <img src="./frlogo_white.png" height="100px"
+          width="250px">
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li class="active"><a href="">About Us</a></li>
           <li><a href="">Shop</a></li>
-      </ul>   
-  </div>
-  <div class="abus">
-    <h2 class="tit">About us</h1>
-    <p class="para">  Fitness Routiness ‌is‌ ‌a‌ ‌online‌ ‌fitness‌ ‌trainer‌ ‌app‌ ‌and‌ ‌website‌ ‌
-      It‌ ‌made‌ ‌your‌ ‌gyms‌ ‌online‌ ‌through‌ ‌video‌ ‌content‌‌
-      from‌ ‌experience‌ ‌trainer‌ ‌to‌ ‌user‌ ‌in‌ ‌anytime‌ ‌and‌‌
-      anywhere‌</p>
-<p class="par">why Fitness Routiness?</p>
-<p> Fitness Routiness is there, To give correct way of workout.</p>
-</div>
+        </ul>
+      </div>
+    </div>
+    <div class="abus">
+      <h2 class="tit">About us</h1>
+      <p class="para"> Fitness Routines ‌is‌ ‌a‌ ‌online‌ ‌fitness‌ ‌trainer‌
+        ‌app‌ ‌and‌ ‌website‌ ‌
+        It‌ ‌made‌ ‌your‌ ‌gyms‌ ‌online‌ ‌through‌ ‌video‌ ‌content‌‌
+        from‌ ‌experience‌ ‌trainer‌ ‌to‌ ‌user‌ ‌in‌ ‌anytime‌ ‌and‌‌
+        anywhere‌</p>
+      <p class="par">why Fitness Routines?</p>
+      <p> Fitness Routiness is there, To give correct way of workout.</p>
+    </div>
   </body>
 </html>

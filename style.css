@@ -38,19 +38,61 @@ body {
     height: 500px;
     margin-left: 150px;
 }
+
 .div {
     /* border: 2px solid whitesmoke;
     border-radius: 15px; */
     padding: 1%;
 }
-.dav{
+
+.dav {
     display: inline-flex;
     margin-left: 150px;
 }
-.image{
+
+.image {
     width: 375px;
     height: 500px;
 }
+
+.logo {
+    display: inline-flex;
+}
+
+.top {
+    display: inline-flex;
+    width: 100%;
+}
+
+.navbar {
+    font-size: 150%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0.5%;
+    width: 110%;
+    height: 10%;
+    background-color: black;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+ul li a:hover {
+    color: black;
+    background-color: whitesmoke;
+}
+
+ul li.active a {
+    color: black;
+    background-color: whitesmoke;
+}
+
 /* 
 <div class="div">
 <table class="tab">
