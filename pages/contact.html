@@ -4,54 +4,104 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./../assest/images/logo_white.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Fitness routines</title>
     <style>
-      body{
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
         background-image: url(../assest/images/bg3.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
-      .logo{
-      display: inline-flex;
-}
-.top{
-  display: inline-flex;
-  width: 100%;
-}
-  .navbar{  
-    font-size: 150%;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    margin-top: 0.5%;
-    width: 110%;
-    height: 10%;
-    background-color: black;
-}
-ul li{
-  display:inline-block;
-}
-ul li a{
-  text-decoration: none;
-  color: whitesmoke;
-  padding: 10px;
-}
-ul li a:hover{
-    color: black;
-    background-color:whitesmoke;
-}
-ul li.active a{   
-    color:black;
-    background-color:whitesmoke;      
-}
-
+      .logo {
+        display: inline-flex;
+      }
+      .top {
+        display: inline-flex;
+        width: 100%;
+      }
+      .navbar {
+        font-size: 150%;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        margin-top: 0.5%;
+        width: 110%;
+        height: 10%;
+        background-color: black;
+      }
+      ul li {
+        display: inline-block;
+      }
+      ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 10px;
+      }
+      ul li a:hover {
+        color: black;
+        background-color: whitesmoke;
+      }
+      ul li.active a {
+        color: black;
+        background-color: whitesmoke;
+      }
+      .contact-contant {
+        margin: auto;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 100px;
+      }
+      .contact-items {
+        border-radius: 5px;
+        box-shadow: 7px 7px 70px;
+        background-color: aliceblue;
+        text-align: center;
+        width: 20%;
+        height: auto;
+        padding: 10px;
+      }
+      .contact-items:hover {
+        transition: 0.9s;
+        background-color: transparent;
+      }
+      .contact-icons {
+        width: 100px;
+        height: 100px;
+      }
+      .contact-link {
+        text-decoration: none;
+        font-size: x-large;
+        color: black;
+      }
+      .contant-details {
+        color: black;
+        text-decoration: none;
+        font-size: large;
+      }
     </style>
   </head>
   <body>
     <div class="top">
-      <div class="logo"> <img src="../assest/images/frlogo_white.png"
+      <div class="logo">
+        <img
+          src="../assest/images/frlogo_white.png"
           height="100px"
-          width="250px">
+          width="250px"
+        />
       </div>
       <div class="navbar">
         <ul>
@@ -62,8 +112,51 @@ ul li.active a{
         </ul>
       </div>
     </div>
-
-
-
+    <div class="contact-contant">
+      <a href="#" class="contact-link">
+        <div class="contact-items">
+          <img
+            src="./../assest/images/mail.svg"
+            alt="mail"
+            class="contact-icons"
+          />
+          <p class="contact-item-name">Mail</p>
+          <a href="#" class="contant-details">support@fitnessroutines.com</a>
+        </div>
+      </a>
+      <a href="#" class="contact-link">
+        <div class="contact-items">
+          <img
+            src="./../assest/images/twitter.svg"
+            alt=""
+            class="contact-icons"
+          />
+          <p class="contact-item-name">Twitter</p>
+          <a href="#" class="contant-details">@fitnessroutines_offical</a>
+        </div>
+      </a>
+      <a href="#" class="contact-link">
+        <div class="contact-items">
+          <img
+            src="./../assest/images/instagram.svg"
+            alt=""
+            class="contact-icons"
+          />
+          <p class="contact-item-name">Instagram</p>
+          <a href="#" class="contant-details">@fitnessroutines_offical</a>
+        </div>
+      </a>
+      <a href="#" class="contact-link">
+        <div class="contact-items">
+          <img
+            src="./../assest/images/facebook.svg"
+            alt=""
+            class="contact-icons"
+          />
+          <p class="contact-item-name">Facebook</p>
+          <a href="#" class="contant-details">@fitnessroutines_offical</a>
+        </div>
+      </a>
+    </div>
   </body>
 </html>

@@ -1,70 +1,94 @@
 <html>
-    <head>
-        <title>
-            FITNESS ROUTINES
-        </title>
-        <style>
-        body
-        {
-            background-image:url(../assest/images/layout.jpg);
-            background-position: center;
-            size: 100;
-            background-size: cover;
-        }
-        .form
-        {
-                 border: 1px solid white;
-                 height: 350px;
-                 margin-left: 27%;
-                 margin-right: 37%; 
-                 margin-top: 10%;
-                 box-shadow: -10px -10px 100px white;  
-                 border-radius:30px;
-                 justify-content: center;
-             }
-             .tit
-             {
-                text-align: center;
-                color: #f0f2f5;
-                font-size: 70px;
-             }
-             .lable{
-                 height: 40px;
-                 width: 55%;
-                 margin-top: 30px;
-                 margin-left: 20%;
-                 border-radius:10px;
-             }
-             .button{
-                margin-top: 30px;
-                margin-left: 35%;
-                width: 25%;
-                height: 40px;
-                color: black;
-                font-size: 25px;
-                border-radius: 10px;
-             }
-             .button:hover{
-                 color: white;
-                 background-color: black;
-                 box-shadow: 10px 10px 100px white;
-             }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./../assest/images/logo_white.png"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>FITNESS ROUTINES</title>
+    <style>
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
+        background-image: url(../assest/images/layout.jpg);
+        background-position: center;
+        size: 100;
+        background-size: cover;
+      }
+      .form {
+        border: 1px solid white;
+        height: 350px;
+        margin-left: 27%;
+        margin-right: 37%;
+        margin-top: 10%;
+        box-shadow: -10px -10px 100px white;
+        border-radius: 30px;
+        justify-content: center;
+      }
+      .tit {
+        text-align: center;
+        color: #f0f2f5;
+        font-size: 70px;
+      }
+      .lable {
+        height: 40px;
+        width: 55%;
+        margin-top: 30px;
+        margin-left: 20%;
+        border-radius: 10px;
+      }
+      .button {
+        margin-top: 30px;
+        margin-left: 35%;
+        width: 25%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        border-radius: 10px;
+      }
+      .button:hover {
+        color: white;
+        background-color: black;
+        box-shadow: 10px 10px 100px white;
+      }
     </style>
-    </head>
-    <body>
-        <h1 class="tit"> FITNESS ROUTINES </h1>
-        <div class="form">
-            <form action="packs.html">
-                <input type="email" name="mail_id"
-                    placeholder="Enter your Email" required class="lable">
-                <input type="password" placeholder="Enter your password"
-                    name="password" required minlength="8" maxlength="8"
-                    class="lable">
-                <input type="submit" class="button" value="login">
-                <button class="button"
-                    onclick="window.location.href='registor.html';">
-                    New Account </button>
-            </form>
-        </div>
-    </body>
-</html>t
+  </head>
+  <body>
+    <h1 class="tit">FITNESS ROUTINES</h1>
+    <div class="form">
+      <form action="packs.html">
+        <input
+          type="email"
+          name="mail_id"
+          placeholder="Enter your Email"
+          required
+          class="lable"
+        />
+        <input
+          type="password"
+          placeholder="Enter your password"
+          name="password"
+          required
+          minlength="8"
+          maxlength="8"
+          class="lable"
+        />
+        <input type="submit" class="button" value="login" />
+        <button class="button" onclick="window.location.href='registor.html';">
+          New Account
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
+t

@@ -1,139 +1,154 @@
 <html>
-    <head>
-        <title>
-            FITNESS ROUTINES
-        </title>
-        <style>
-            body
-            {
-                background-image: url(../assest/images/layout.jpg);
-                background-position: center;
-                size: 100;
-                background-size: cover;
-            }
-            .tit
-             {
-                text-align: center;
-                color: #f0f2f5;
-                font-size: 70px;
-             }
-             .form{
-                 border: 1px solid white;
-                 height: 750px;
-                 margin-left: 27%;
-                 margin-right: 37%; 
-                 box-shadow: -10px -10px 100px white;  
-                 border-radius:30px;
-                 justify-content: center;
-             }
-             .lable{
-                 height: 40px;
-                 width: 55%;
-                 margin-top: 30px;
-                 margin-left: 20%;
-                 border-radius:10px;
-             }
-             .button{
-                margin-top: 30px;
-                margin-left: 40%;
-                width: 25%;
-                height: 40px;
-                color: black;
-                font-size: 25px;
-                border-radius: 10px;
-             }
-             .button:hover{
-                 color: white;
-                 background-color: black;
-                 box-shadow: 10px 10px 100px white;
-             }
-             #date{
-                 height: 40px;
-                 width: 55%;
-                 margin-left: 20%; 
-                 border-radius:10px;  
-             }
-             .dob{
-                height: 40px;
-                 width: 60%;
-                 margin-top: 30px;
-                 margin-left: 20%;
-                 color: white;
-             }
-        </style>
-    </head>
-    <body>
-        <h1 class="tit"> FITNESS ROUTINES </h1> <br> <br> <br>
-        <div class="form">
-            <form action="login.html">
-                <input type="text" name="name" placeholder="Username" required
-                    class="lable"> <br>
-                <input type="email" name="email_id" placeholder="Mail address"
-                    required class="lable"> <br>
-                <input type="password" placeholder="password" name="password"
-                    class="lable" required minlength="8" maxlength="8"> <br>
-                <input type="password" placeholder="Confirm password"
-                    name="password" class="lable" required minlength="8"
-                    maxlength="8"> <br>
-                <input type="number" placeholder="Weight in kg" min="30"
-                    class="lable" required> <br>
-                <input type="number" placeholder="Height in cm" min="120"
-                    class="lable" required> <br> <br>
-                <label for="date" class="dob"> Date of Birth</label> <input
-                    id="date" type="date" max="1980-12-31" min="2004-12-31"
-                    required> <br>
-                <textarea placeholder="Any experience in Gym" rows="4" cols="21"
-                    class="lable"></textarea> <br>
-                <input type="submit" class="button"> <br>
-                <input type="reset" class="button"> <br>
-            </form>
-        </div>
-    </body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <title>FITNESS ROUTINES</title>
+    <style>
+      * {
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
+        background-image: url(../assest/images/layout.jpg);
+        background-position: center;
+        size: 100;
+        background-size: cover;
+      }
+      .tit {
+        text-align: center;
+        color: #f0f2f5;
+        font-size: 70px;
+      }
+      .form {
+        border: 1px solid white;
+        height: 750px;
+        margin-left: 27%;
+        margin-right: 37%;
+        box-shadow: -10px -10px 100px white;
+        border-radius: 30px;
+        justify-content: center;
+      }
+      .lable {
+        height: 40px;
+        width: 55%;
+        margin-top: 30px;
+        margin-left: 20%;
+        border-radius: 10px;
+      }
+      .button {
+        margin-top: 30px;
+        margin-left: 40%;
+        width: 25%;
+        height: 40px;
+        color: black;
+        font-size: 25px;
+        border-radius: 10px;
+      }
+      .button:hover {
+        color: white;
+        background-color: black;
+        box-shadow: 10px 10px 100px white;
+      }
+      #date {
+        height: 40px;
+        width: 55%;
+        margin-left: 20%;
+        border-radius: 10px;
+      }
+      .dob {
+        height: 40px;
+        width: 60%;
+        margin-top: 30px;
+        margin-left: 20%;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="tit">FITNESS ROUTINES</h1>
+    <br />
+    <br />
+    <br />
+    <div class="form">
+      <form action="login.html">
+        <input
+          type="text"
+          name="name"
+          placeholder="Username"
+          required
+          class="lable"
+        />
+        <br />
+        <input
+          type="email"
+          name="email_id"
+          placeholder="Mail address"
+          required
+          class="lable"
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="password"
+          name="password"
+          class="lable"
+          required
+          minlength="8"
+          maxlength="8"
+        />
+        <br />
+        <input
+          type="password"
+          placeholder="Confirm password"
+          name="password"
+          class="lable"
+          required
+          minlength="8"
+          maxlength="8"
+        />
+        <br />
+        <input
+          type="number"
+          placeholder="Weight in kg"
+          min="30"
+          class="lable"
+          required
+        />
+        <br />
+        <input
+          type="number"
+          placeholder="Height in cm"
+          min="120"
+          class="lable"
+          required
+        />
+        <br />
+        <br />
+        <label for="date" class="dob"> Date of Birth</label>
+        <input
+          id="date"
+          type="date"
+          max="1980-12-31"
+          min="2004-12-31"
+          required
+        />
+        <br />
+        <textarea
+          placeholder="Any experience in Gym"
+          rows="4"
+          cols="21"
+          class="lable"
+        ></textarea>
+        <br />
+        <input type="submit" class="button" /> <br />
+        <input type="reset" class="button" /> <br />
+      </form>
+    </div>
+  </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!-- 
             <table align="center" border="0">
