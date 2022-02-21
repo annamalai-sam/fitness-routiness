@@ -9,13 +9,13 @@ body {
     background-size: cover;
 }
 
-.tit {
+.title {
     text-align: center;
     color: #f0f2f5;
     font-size: 70px;
 }
 
-.subtit {
+.subtitle {
     text-align: center;
     color: #F0FFFF;
     font-size: 50px;
@@ -47,11 +47,6 @@ body {
     /* border: 2px solid whitesmoke;
     border-radius: 15px; */
     padding: 1%;
-}
-
-.dav {
-    display: inline-flex;
-    margin-left: 150px;
 }
 
 .image {

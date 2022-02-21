@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Open+Sans&display=swap"
       rel="stylesheet"
     />
@@ -22,51 +26,99 @@
       body {
         background-image: url(../assest/images/layout.jpg);
         background-position: center;
-        size: 100;
         background-size: cover;
       }
       .form {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 1px;
+        padding: 10px;
         border: 1px solid white;
-        height: 350px;
-        margin-left: 27%;
-        margin-right: 37%;
-        margin-top: 10%;
-        box-shadow: -10px -10px 100px white;
-        border-radius: 30px;
-        justify-content: center;
+        width: 40%;
+        height: 50%;
+        box-shadow: 5px 5px 30px white;
+        border-radius: 10px;
+        margin: auto;
       }
-      .tit {
+      .title {
         text-align: center;
         color: #f0f2f5;
         font-size: 70px;
       }
       .lable {
         height: 40px;
-        width: 55%;
-        margin-top: 30px;
-        margin-left: 20%;
-        border-radius: 10px;
+        width: 70%;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1.5px solid white;
+        font-size: 1rem;
+        color: aliceblue;
+        transition: 0.5s;
+      }
+      .lable:hover {
+        border: none;
+        border-bottom: 5px solid white;
+      }
+      .lable::placeholder {
+        font-size: 22px;
+        color: #fff;
       }
       .button {
-        margin-top: 30px;
-        margin-left: 35%;
-        width: 25%;
         height: 40px;
-        color: black;
+        width: auto;
+        color: white;
+        border: 1px solid white;
+        background-color: transparent;
+        transition: 0.3s;
         font-size: 25px;
         border-radius: 10px;
       }
       .button:hover {
+        color: black;
+        background-color: white;
+        box-shadow: 1px 1px 10px white;
+      }
+      .input-box1 {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 7;
+      }
+      .input-box2 {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 7;
+        display: block;
+      }
+      .input-box3 {
+        grid-row: 3 / span 1;
+        grid-column: 3 / span 3;
+      }
+      .input-button1 {
+        grid-row: 4 / span 1;
+        grid-column: 4 / span 3;
+      }
+      .input-button2 {
+        grid-row: 5 / span 1;
+        grid-column: 3 / span 5;
+      }
+      .form > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .far {
+        color: #fff;
+      }
+
+      .input-box3 > label {
         color: white;
-        background-color: black;
-        box-shadow: 10px 10px 100px white;
+        font-size: 20px;
       }
     </style>
   </head>
   <body>
-    <h1 class="tit">FITNESS ROUTINES</h1>
-    <div class="form">
-      <form action="packs.html">
+    <h1 class="title">Fitness Routines</h1>
+    <form class="form" action="packs.html">
+      <div class="input-box1">
         <input
           type="email"
           name="mail_id"
@@ -74,7 +126,11 @@
           required
           class="lable"
         />
+      </div>
+
+      <div class="input-box2">
         <input
+          id="input_password"
           type="password"
           placeholder="Enter your password"
           name="password"
@@ -83,12 +139,35 @@
           maxlength="8"
           class="lable"
         />
+      </div>
+      <div class="input-box3">
+        <input
+          type="checkbox"
+          onclick="show_pass()"
+          name=""
+          id="show_password"
+        />
+        <label for="show_password"> Show password </label>
+      </div>
+      <div class="input-button1">
         <input type="submit" class="button" value="login" />
+      </div>
+      <div class="input-button2">
         <button class="button" onclick="window.location.href='registor.html';">
           New Account
         </button>
-      </form>
-    </div>
+      </div>
+    </form>
+    <script>
+      function show_pass() {
+        // showing password in html page
+        let checkBox = document.getElementById("show_password");
+        if (checkBox.checked) {
+          document.getElementById("input_password").type = "text";
+        } else {
+          document.getElementById("input_password").type = "password";
+        }
+      }
+    </script>
   </body>
 </html>
-t
