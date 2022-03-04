@@ -10,6 +10,7 @@
       href="./assest/images/logo_white.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="././assest/css/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,71 +20,7 @@
     />
 
     <title>Fitness routiness</title>
-    <style>
-      * {
-        font-family: "Open Sans", sans-serif;
-      }
-      body {
-        background-image: url(./assest/images/bg2.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-      h2 {
-        text-align: center;
-        font-size: 55px;
-        margin-top: 5%;
-        color: red;
-      }
-
-      button {
-        padding: 5px;
-        font-size: xx-large;
-        border-radius: 15px;
-        border: 2px solid black;
-        margin: auto;
-        margin-top: 3%;
-        margin-left: 44%;
-        margin-right: 44%;
-        cursor: pointer;
-      }
-      button:hover {
-        background-color: black;
-        color: white;
-      }
-
-      .logo {
-        display: inline-flex;
-      }
-      .top {
-        display: inline-flex;
-        width: 100%;
-      }
-      .navbar {
-        font-size: 150%;
-        margin-top: 0.5%;
-        width: 110%;
-        height: 10%;
-        background-color: black;
-      }
-      ul li {
-        display: inline-block;
-      }
-      ul li a {
-        text-decoration: none;
-        color: whitesmoke;
-        padding: 10px;
-      }
-      ul li a:hover {
-        color: black;
-        background-color: whitesmoke;
-      }
-      ul li.active a {
-        color: black;
-        background-color: whitesmoke;
-      }
-    </style>
+    <style></style>
   </head>
   <body>
     <div class="top">
@@ -104,7 +41,10 @@
       </div>
     </div>
     <h2>Allow yourself to be a beginner no one start at the top</h2>
-    <button onclick="window.location.href='./pages/login.html'">
+    <button
+      class="start-button"
+      onclick="window.location.href='./pages/login.html'"
+    >
       Let us begin
     </button>
   </body>
